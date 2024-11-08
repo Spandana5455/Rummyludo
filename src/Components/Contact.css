@@ -1,0 +1,47 @@
+/* src/ContactUs.css */
+
+.contact-container {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .contact-header {
+    background-color: #D2B805;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .contact-link {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    color: #004080;
+    text-decoration: underline;
+  }
+  
+  .btn-outline-primary {
+    color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+  }
+  

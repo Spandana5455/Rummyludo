@@ -1,1 +1,18 @@
+.c-rummy-card {
+    background-color: #D2B805;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 150px;
+    cursor: pointer;
+  }
+ 
+  .c-rummy-card:hover {
+    transform: translateY(-10px);
+ 
+  }
+  .c-card-title {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
  

@@ -20,7 +20,7 @@ import Free from './Components/Free'
  const Testimonials = lazy(()=>import('./Components/Testimonials'))
  const TdsFilling= lazy(()=>import('./Components/TdsFilling'))
  const TdsPolicy= lazy(()=>import('./Components/TdsPolicy'))
- const Csr = lazy(()=>import('./Components/Csr'))
+ 
  const GstPolicy = lazy(()=>import('./Components/GstPolicy'))
  const Faqs = lazy(()=>import('./Components/Faqs'))
  const Contact = lazy(()=>import('./Components/Contact'))
@@ -67,7 +67,7 @@ import Free from './Components/Free'
             <Route path='gstpolicy' element={<GstPolicy/>}/>
             <Route path='tdsfilling' element={<TdsFilling/>}/>
             <Route path='TdsPolicy' element={<TdsPolicy/>}/>
-            <Route path='csr' element={<Csr/>}/>
+       
             <Route path='faqs' element={<Faqs/>}/>
             <Route path='contactus' element={<Contact/>}/>
             <Route path='shippingpolicy' element={<Shipingpolicy/>}/>

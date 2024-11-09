@@ -38,7 +38,7 @@ export default function FairPlay() {
         </ol>
        </div>
        <div className="Prohibited">
-        <h1>Prohibited Conduct</h1>
+        <h3>Prohibited Conduct</h3>
         <p className="para">The following conduct is expressly prohibited on the Platform</p>
         
           <ol>

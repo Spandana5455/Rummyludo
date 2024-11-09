@@ -11,7 +11,7 @@ export default function Conditions() {
     <li className="breadcrumb-item active" aria-current="page"> Privacy Policy</li>
   </ol>
 </nav>
-       <div>
+       <div className='content-pading'>
         <h1 className='mt-5'>Privacy Policy</h1>
        </div>
     </div>

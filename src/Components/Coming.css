@@ -35,3 +35,13 @@
       width: 100%;
     }
   }
+
+
+
+/* __________tds fill________ */
+.place-middle{
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Components/Footer.css'
 import { useNavigate } from 'react-router-dom'
+import img from '../images/logo1.png'
 
 export default function Footer() {
     const navigate =useNavigate()
@@ -11,16 +12,13 @@ export default function Footer() {
             <footer className="site-footer mt-5">
                 <div className="container">
                     <div>
-                        {/* <img src="https://th.bing.com/th/id/OIP.TFdejIWK1tTX7s-tlp5WaAHaGe?rs=1&pid=ImgDetMain" alt="noimage" className='shadow  footer-icon' /> */}
+                        <img src={img} alt="noimage" className='shadow  footer-icon' />
                     </div>
                     <div className="row">
                         <div className="col-sm-6 col-md-4">
                             <h6>About</h6>
                             <p className="text-justify"> RummyLudo is a Indian online rummy platform, providing a 24/7 gaming experience with advanced technology, hosting multiple cash games and tournaments.</p>
                         </div>
-
-
-
                         <div className="col-sm-6 col-md-3">
                             <h6>Quick Links</h6>
                             <ul className="footer-links">
@@ -41,8 +39,8 @@ export default function Footer() {
                                 <li className='footer-text'  onClick={()=>{navigate('/contactus')}}><span>Contact Us</span></li>
                                 <li className='footer-text'  onClick={()=>{navigate('/legality')}}><span>Legality</span></li>
                                 <li className='footer-text'  onClick={()=>{navigate('/rng')}}><span>RNG Certificate</span></li>
-                                <li className='footer-text'  onClick={()=>{navigate('/csr')}}><span>CSR</span></li>
-                                <li className='footer-text'  onClick={()=>{navigate('/terms')}}><span>Terms & Conditions</span></li>
+                                <li id='footer-csr-link'     >      <a href='http://localhost:3000/csr.pdf'  target="_blank" style={{textDecoration:'none',color:'#818a91'}} > CSR Certificate</a></li>
+                                <li className='footer-text'   onClick={()=>{navigate('/terms')}}><span>Terms & Conditions</span></li>
                             </ul>
                         </div>
                         <div className="col-sm-6 col-md-2">
@@ -96,7 +94,7 @@ export default function Footer() {
                 </div>
                 <div className="container">
                     <div className='text-center'>
-                        <p className="copyright-text">Copyright &copy; 2024 All Rights Reserved by   <a href="#" className='text-danger'>LKR Technologies</a>.  </p>
+                        <p className="copyright-text">Copyright &copy; 2024 All Rights Reserved by   <a href="#" className='text-danger'>LKR Technologies Pvt Ltd</a> </p>
                     </div>
 
                 </div>

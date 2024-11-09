@@ -6,7 +6,7 @@ export default function TermsAndCon() {
 <div className='container mb-5'>
     <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className='mt-4 content-pading'>
   <ol className="breadcrumb">
-    <li className="breadcrumb-item"><a href="#">Home</a></li>
+    <li className="breadcrumb-item"><span  >Home</span></li>
     <li className="breadcrumb-item active" aria-current="page">Terms & Conditions</li>
   </ol>
 </nav>

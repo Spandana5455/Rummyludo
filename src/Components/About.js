@@ -5,7 +5,7 @@ export default function About() {
 const navigate =useNavigate()
   return (
     
-    <>
+   
  
  <>
     <div className='container'>
@@ -21,7 +21,7 @@ const navigate =useNavigate()
         <p className="para">RummyLudo is one of India’s premier online rummy platforms, delivering the classic 13-card rummy experience directly to your preferred device with all the excitement of traditional play. Rummy, which was previously limited to local gatherings with friends and family, now has a digital avatar on RummyLudo, delivering fast-paced games, a secure platform, and safe transactions that adhere to international standards.</p>
         <p className="para">RummyLudo replicates the offline experience, utilizing innovative technology and data analysis to create a unique gaming journey for each player. Every time you play online, you may simply access your favorite 13-card game with smooth action that combines skill and fun.</p>
      
-     <h1>Safest & Most Enjoyable Rummy Experience</h1>
+     <h3>Safest & Most Enjoyable Rummy Experience</h3>
      <p className="para">Playing rummy online offers a thrilling experience, combining strategy, skill, and excitement. To ensure a safe and enjoyable environment for all players, it is essential to choose a reputable platform that prioritizes player security and satisfaction.</p>
    
 
@@ -65,7 +65,7 @@ const navigate =useNavigate()
 
        </div>
 <div className="Seamless-blead">
-    <h1>Seamless Blend of Technology & Design</h1>
+    <h3>Seamless Blend of Technology & Design</h3>
     <p className="para">What makes RummyLudo a truly premium rummy experience is its extensive variety of game formats and standout features, including Easy & Quick Withdrawals. Our platform guarantees 100% safe and secure gameplay, ensuring that your funds are always protected.</p>
     <p className="para">At RummyLudo, we understand that players seek both excitement and reliability, which is why we have implemented state-of-the-art security measures and encrypted transactions. You can focus on enjoying the game, knowing your money is in safe hands.</p>
     <p className="para">We have seamlessly blended technology and design to enhance the rummy experience. Our user-friendly interface allows for intuitive navigation, making it easy for players of all skill levels to join and enjoy the game. With visually stunning graphics and smooth gameplay, every session feels immersive and engaging.</p>
@@ -73,10 +73,10 @@ const navigate =useNavigate()
     <p className="para">Join us at RummyLudo for an unparalleled rummy experience where technology meets design, ensuring you enjoy the thrill of the game while benefiting from a secure and supportive environment. Get ready to shuffle, deal, and play your way to victory!</p>
 </div>
 <div className="A-group">
-    <h1>A Group of Rummy Enthusiasts!</h1>
+    <h3>A Group of Rummy Enthusiasts!</h3>
     <p className="para">RummyLudo was established by a team of industry experts with decades of experience in developing successful products. Our leadership team includes alumni from prestigious institutions such as IITs and IIMs, who have contributed to some of India's most popular start-ups. Their extensive knowledge and innovative thinking drive RummyLudo's commitment to providing an exceptional gaming experience, making us a trusted name in the online rummy landscape.</p>
 </div>
-<h1>Goal to Revolutionize Rummy Playing in India</h1>
+<h3>Goal to Revolutionize Rummy Playing in India</h3>
 <p className="para">
 RummyLudo's only goal is to revolutionize online rummy gaming in India by providing the greatest possible experience at any time and from any location. Because of our persistent commitment to this goal, we have developed a sizable community of rummy fans that support our platform's rewarding and user-friendly features. Every player will experience an unmatched gaming experience with RummyLudo because to our emphasis on quality and creativity.
 </p>
@@ -90,6 +90,6 @@ To know more about us, refer to the following links:
     </div>
     </div>
     </>
-    </>
+ 
   )
 }

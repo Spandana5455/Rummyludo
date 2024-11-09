@@ -17,7 +17,7 @@ export default function Deals() {
                 <h1>How to Play Deals Rummy ? </h1>
                 <p className="para">With online rummy now widely accessible, it’s easier than ever to connect with other players on a rummy app like RummyLudo and even compete for exciting prizes. If you’re someone looking to enjoy an engaging format of rummy, Deals Rummy on RummyLudo is a fantastic choice.</p>
                 <p className="para">Deals Rummy is one of the most popular rummy variants, requiring skill, strategic thinking, and a deep understanding of the game. Played with 13 cards, this variation is enjoyed all across India. Players must stay focused, strategize, and make quick calculations to excel, which makes Deals Rummy thrilling and dynamic. This excitement is exactly why major platforms, like RummyLudo, proudly offer this variant for their users.</p>
-                <h1>How to Play and the Rules of Deals Rummy ?</h1>
+                <h2>How to Play and the Rules of Deals Rummy ?</h2>
                 <p className="para">
                     In a Deals rummy game, there are often two to six players. This format differs from previous variations in that each player is given a fixed quantity of chips at the start of the game. A set amount of deals will be required of players using these chips. The winner of each deal the first player to make a legitimate declaration will also get the chips from their rivals. After all of the predetermined transactions are completed, the person with the most chips will be proclaimed the winner. Each chip's worth is established prior to each game, and they serve as the game's virtual money.
                 </p>

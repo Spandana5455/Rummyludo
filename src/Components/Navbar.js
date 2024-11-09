@@ -3,24 +3,33 @@ import './Navbar.css';
 import logo from '../images/logo1.png'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+ 
+
+
 
 
 export default function Navbar() {
   const navigate = useNavigate()
   const [activeDropdown, setActiveDropdown] = useState('');
-
+  const [show, setshow] = useState(true)
   const toggleDropdown = (dropdown) => {
     setActiveDropdown((prevDropdown) => (prevDropdown === dropdown ? '' : dropdown));
   };
+  const handleNavigate = (path) => {
+    navigate(path);
+    
+ 
+  };
+  
   return (
     <>
-      <nav className="navbar    sticky-top shadow-sm " id='main-navbar-bg'>
+      <nav className="navbar sticky-top shadow-sm " id='main-navbar-bg'>
         <div className="container d-flex align-items-center justify-content-between">
 
           {/* Logo aligned with navigation */}
-           <div className=''>
-          <img src={logo} className="navbar-brand text-center logo " style={{ cursor: 'pointer' }} onClick={() => { navigate('/') }} alt="logo" />
-</div>
+          <div className=''>
+            <img src={logo} className="navbar-brand text-center logo " style={{ cursor: 'pointer' }} onClick={() => { navigate('/') }} alt="logo" />
+          </div>
           {/* Toggler visible only on mobile screens */}
           <button
             className="navbar-toggler d-lg-none ms-auto"
@@ -37,7 +46,7 @@ export default function Navbar() {
           <div className="d-none d-lg-flex navbar-width">
             <ul className="navbar-nav flex-row gap-5 align-items-center  mb-lg-0">
               <li className="nav-item">
-                <span className=" nav-link links-in-nav main-nav-text" aria-current="page"  onClick={()=>{navigate('/rummyapp')}}>Rummy App</span>
+                <span className=" nav-link links-in-nav main-nav-text" aria-current="page" onClick={() => { navigate('/rummyapp') }}>Rummy App</span>
               </li>
               <li className="nav-item dropdown">
                 <span
@@ -53,11 +62,11 @@ export default function Navbar() {
                   </span>
                 </span>
                 <ul className="dropdown-menu dropdown-menu-light" id='drop-down-show'>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('/rules')}}>Rummy Rules</span></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('/rules') }}>Rummy Rules</span></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('rummy/freepractice')}}>Free Pratice Games</span></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('rummy/freepractice') }}>Free Pratice Games</span></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('rummy/Tips')}}>Rummy Tips & Strategies</span></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('rummy/Tips') }}>Rummy Tips & Strategies</span></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -74,20 +83,20 @@ export default function Navbar() {
                   </span>
                 </span>
                 <ul className="dropdown-menu dropdown-menu-light" id='drop-down-show'>
-                  <li className=' '><span className="dropdown-item "onClick={()=>{navigate('/Variants')}} >All Variations</span></li>
+                  <li className=' '><span className="dropdown-item " onClick={() => { navigate('/Variants') }} >All Variations</span></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('/varients/deals')}}>Deals Rummy</span></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('/varients/deals') }}>Deals Rummy</span></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('varients/pools')}}>Pool Rummy</span></li><li><hr className="dropdown-divider" /></li>
-                  <li><span className="dropdown-item" onClick={()=>{navigate('varients/points')}} >Points Rummy</span></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('varients/pools') }}>Pool Rummy</span></li><li><hr className="dropdown-divider" /></li>
+                  <li><span className="dropdown-item" onClick={() => { navigate('varients/points') }} >Points Rummy</span></li>
                 </ul>
               </li>
             </ul>
 
             <button className="btn fs-4 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon" onClick={()=>(setshow(true))}></span>
             </button>
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        {show &&  <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div className="offcanvas-header">
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -95,19 +104,19 @@ export default function Navbar() {
                 <div>
                   <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav active" aria-current="page" onClick={()=>{navigate('rummy/indianrummy')}} >Indian Rummy</span>
+                      <span className=" nav-link links-in-nav active" aria-current="page" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/indianrummy') }} >Indian Rummy</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav"  onClick={()=>{navigate('rummy/cashrummy')}}>Cash Rummy</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/cashrummy') }}>Cash Rummy</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav" onClick={()=>{navigate('rummy/Therteencardrummy')}} >13 Card Rummy</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/Therteencardrummy') }} >13 Card Rummy</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav" style={{ cursor: 'pointer' }} onClick={() => { navigate('/tournaments') }}  >Rummy Tournaments</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" style={{ cursor: 'pointer' }} onClick={() => { handleNavigate('/tournaments') }}  >Rummy Tournaments</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav"  style={{ cursor: 'pointer' }} onClick={() => { navigate('/faqs') }} >FAQs</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" style={{ cursor: 'pointer' }} onClick={() => { handleNavigate('/faqs') }} >FAQs</span>
                     </li>
                     {/* <li className="nav-item">
                       <span className=" nav-link links-in-nav"  >Blog</span>
@@ -115,14 +124,14 @@ export default function Navbar() {
                   </ul>
                 </div>
                 <div className='end-part d-flex '>
-                  <span style={{ cursor: 'pointer' }} onClick={() => { navigate('/privacy') }} >Privacy Policy</span>
+                  <span style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/privacy') }} >Privacy Policy</span>
                   <ul className='d-flex gap-4'>
-                    <li style={{ cursor: 'pointer' }} onClick={() => { navigate('/terms') }} > Terms and Conditions</li>
-                    <li style={{ cursor: 'pointer' }} onClick={() => { navigate('/legality') }} > Legality</li>
+                    <li style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/terms') }} > Terms and Conditions</li>
+                    <li style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/legality') }} > Legality</li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div>}
           </div>
 
           {/* Offcanvas for mobile screens */}
@@ -146,54 +155,54 @@ export default function Navbar() {
                 <div>
                   <ul className="navbar-nav">
                     <li className="nav-item" aria-current="page" >
-                      <span className=" nav-link links-in-nav" onClick={()=>{navigate('/rummyapp')}} > Rummy App</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/rummyapp') }} > Rummy App</span>
                     </li>
                     <li className="nav-item d-flex align-items-center " onClick={() => toggleDropdown('rummy')}>
                       <div className=" nav-link links-in-nav">How to Play Rummy </div>
                       <div className='mt-2'><span className="material-symbols-outlined">chevron_right</span></div>
                     </li>
                     {activeDropdown === 'rummy' && (
-            <div className="rummy-content">
-              <ul>
-                <li><span className="dropdown-item" onClick={()=>{navigate('/rules')}}>Rummy Rules</span></li>
-                <li><span className="dropdown-item" onClick={()=>{navigate('rummy/freepractice')}}>Free Practice Games</span></li>
-                <li><span className="dropdown-item" onClick={()=>{navigate('rummy/tips')}}>Rummy Tips & Strategies</span></li>
-              </ul>
-            </div>
-          )}
+                      <div className="rummy-content">
+                        <ul>
+                          <li><span className="dropdown-item"data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/rules') }}>Rummy Rules</span></li>
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/freepractice') }}>Free Practice Games</span></li>
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/tips') }}>Rummy Tips & Strategies</span></li>
+                        </ul>
+                      </div>
+                    )}
 
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav" onClick={()=>{navigate('rummy/indianrummy')}} >Indian Rummy</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/indianrummy') }} >Indian Rummy</span>
                     </li>
 
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav" onClick={()=>{navigate('rummy/cashrummy')}} >Cash Rummy</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/cashrummy') }} >Cash Rummy</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav"  onClick={()=>{navigate('rummy/Therteencardrummy')}}>13 Card Rummy</span>
+                      <span className=" nav-link links-in-nav" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/Therteencardrummy') }}>13 Card Rummy</span>
                     </li>
-                    <li className="nav-item d-flex align-items-center "  onClick={() => toggleDropdown('variations')}>
+                    <li className="nav-item d-flex align-items-center " onClick={() => toggleDropdown('variations')}>
                       <div className=" nav-link links-in-nav" > Rummy Variations</div>
                       <div className='mt-2'><span className="material-symbols-outlined">chevron_right</span></div>
                     </li>
                     {activeDropdown === 'variations' && (
                       <div className="rummy-content">
-                          <ul >
-                  <li className=' '><span className="dropdown-item "onClick={()=>{navigate('/Variants')}} >All Variations</span></li>
-                
-                  <li><span className="dropdown-item"onClick={()=>{navigate('/varients/deals')}}>Deals Rummy</span></li>
-                
-                  <li><span className="dropdown-item"onClick={()=>{navigate('/varients/pools')}} >Pool Rummy</span></li> 
-                  <li><span className="dropdown-item" onClick={()=>{navigate('/varients/points')}}>Points Rummy</span></li>
-                </ul>
+                        <ul >
+                          <li className=' '><span className="dropdown-item " data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/Variants') }} >All Variations</span></li>
+
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/varients/deals') }}>Deals Rummy</span></li>
+
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/varients/pools') }} >Pool Rummy</span></li>
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/varients/points') }}>Points Rummy</span></li>
+                        </ul>
                       </div>
                     )}
 
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav"  style={{ cursor: 'pointer' }} onClick={() => { navigate('/tournaments') }} >Rummy Tournaments</span>
+                      <span className=" nav-link links-in-nav" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/tournaments') }} >Rummy Tournaments</span>
                     </li>
                     <li className="nav-item">
-                      <span className=" nav-link links-in-nav"  style={{ cursor: 'pointer' }} onClick={() => { navigate('/faqs') }} >FAQs</span>
+                      <span className=" nav-link links-in-nav" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/faqs') }} >FAQs</span>
                     </li>
                     {/* <li className="nav-item">
                       <span className=" nav-link links-in-nav"  >Blog</span>
@@ -202,9 +211,9 @@ export default function Navbar() {
                 </div>
                 <div>
                   <ul className='navbar-nav mt-5'>
-                    <li className="nav-item"style={{ cursor: 'pointer' }} onClick={() => { navigate('/privacy') }} >  Privacy Policy </li>
-                    <li lassName="nav-item" style={{ cursor: 'pointer' }} onClick={() => { navigate('/terms') }} > Terms and Conditions</li>
-                    <li lassName="nav-item" style={{ cursor: 'pointer' }} onClick={() => { navigate('/legality') }} > Legality</li>
+                    <li className="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/privacy') }} >  Privacy Policy </li>
+                    <li lassName="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/terms') }} > Terms and Conditions</li>
+                    <li lassName="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/legality') }} > Legality</li>
                   </ul>
                 </div>
               </nav>

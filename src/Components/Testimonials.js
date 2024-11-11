@@ -1,6 +1,5 @@
 import React from 'react'
 import './Testimanials.css'
-import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -35,17 +34,17 @@ export default function Testimonials() {
             If you are a complete novice, you should not be concerned. Although rummy is a simple game to learn, it takes a lot of practice to become an expert player and begin playing games for real money. Go over the pages that are given below.
           </p>
           <ul className="list-unstyled">
-            <li><a href="#points-rummy" className="resource-link"  onClick={()=>{navigate('/varients/points')}}>Points Rummy</a></li>
-            <li><a href="#pool-rummy" className="resource-link"  onClick={()=>{navigate('/varients/pools')}}>Pool Rummy</a></li>
-            <li><a href="#deal-rummy" className="resource-link"  onClick={()=>{navigate('/varients/deals')}}>Deal Rummy</a></li>
-            <li><a href="#rummy-faqs" className="resource-link"  onClick={()=>{navigate('/faqs')}}>Rummy FAQs</a></li>
+            <li><span className="resource-link"  onClick={()=>{navigate('/varients/points')}}>Points Rummy</span></li>
+            <li><span className="resource-link"  onClick={()=>{navigate('/varients/pools')}}>Pool Rummy</span></li>
+            <li><span className="resource-link"  onClick={()=>{navigate('/varients/deals')}}>Deal Rummy</span></li>
+            <li><span className="resource-link"  onClick={()=>{navigate('/faqs')}}>Rummy FAQs</span></li>
           </ul>
         </div>
       </div>
 
       <nav className="navbar bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Offcanvas navbar</a>
+        <span className="navbar-brand">Offcanvas navbar</span>
         <button
           className="navbar-toggler"
           type="button"

@@ -8,8 +8,8 @@ export default function RummyApp() {
   return (
 
     <>
-   <div className="container content-pading py-5">
-      <div className="row align-items-center">
+   <div className="container  py-5">
+      <div className="row align-items-center contianer" > 
         {/* Image on the Left */}
         <div className="col-md-4 col-sm-12">
           <div className="image-container">

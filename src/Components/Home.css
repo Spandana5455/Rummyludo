@@ -96,6 +96,7 @@ padding-right: 70px;
     position: static;
     min-height: 120vh;
     flex-direction: column;
+    flex-direction: column-reverse;
 }
 .home-heading{
     position: static;

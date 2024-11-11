@@ -5,6 +5,11 @@ import img from '../images/logo1.png'
 
 export default function Footer() {
     const navigate =useNavigate()
+
+
+    const openFileInNewWindow = () => {
+      window.open('/CSR.pdf', '_blank'); // Opens the PDF in a new tab
+    };
     return (
 
         <>
@@ -39,7 +44,7 @@ export default function Footer() {
                                 <li className='footer-text'  onClick={()=>{navigate('/contactus')}}><span>Contact Us</span></li>
                                 <li className='footer-text'  onClick={()=>{navigate('/legality')}}><span>Legality</span></li>
                                 <li className='footer-text'  onClick={()=>{navigate('/rng')}}><span>RNG Certificate</span></li>
-                                <li id='footer-csr-link'     >      <a href='http://localhost:3000/csr.pdf'  target="_blank" style={{textDecoration:'none',color:'#818a91'}} > CSR Certificate</a></li>
+                                <li className='footer-text'   onClick={openFileInNewWindow}><span>CSR Certificate</span></li>
                                 <li className='footer-text'   onClick={()=>{navigate('/terms')}}><span>Terms & Conditions</span></li>
                             </ul>
                         </div>

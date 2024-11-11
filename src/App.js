@@ -37,6 +37,8 @@ import Free from './Components/Free'
  const Points = lazy(()=>import('./Components/Points'))
  const Practice = lazy(()=>import('./Components/Free'))
  const Tips = lazy(()=>import('./Components/Tips'))
+ const Csr = lazy(()=>import('./Components/Csr'))
+
 
 
 
@@ -67,7 +69,7 @@ import Free from './Components/Free'
             <Route path='gstpolicy' element={<GstPolicy/>}/>
             <Route path='tdsfilling' element={<TdsFilling/>}/>
             <Route path='TdsPolicy' element={<TdsPolicy/>}/>
-       
+            <Route path='csr' element={<Csr/>}/>
             <Route path='faqs' element={<Faqs/>}/>
             <Route path='contactus' element={<Contact/>}/>
             <Route path='shippingpolicy' element={<Shipingpolicy/>}/>

@@ -178,6 +178,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          
           <div className='gird-2'>
             <img src={img} alt="" className='home-pic' />
           </div>

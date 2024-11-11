@@ -78,10 +78,10 @@ export default function Footer() {
                                 <h6>Connect With Us</h6>
                                 <ul className="footer-links">
                                     <ul className="social-icons mt-3">
-                                        <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a className="dribbble" href="#"><i className="fa fa-dribbble"></i></a></li>
-                                        <li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
+                                        <li><span className="facebook" ><i className="fa fa-facebook"></i></span></li>
+                                        <li><span className="twitter" ><i className="fa fa-twitter"></i></span></li>
+                                        <li><span className="dribbble" ><i className="fa fa-dribbble"></i></span></li>
+                                        <li><span className="linkedin" ><i className="fa fa-linkedin"></i></span></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -99,7 +99,7 @@ export default function Footer() {
                 </div>
                 <div className="container">
                     <div className='text-center'>
-                        <p className="copyright-text">Copyright &copy; 2024 All Rights Reserved by   <a href="#" className='text-danger'>LKR Technologies Pvt Ltd</a> </p>
+                        <p className="copyright-text">Copyright &copy; 2024 All Rights Reserved by   <span  onClick={()=>{navigate('/')}} className='text-danger' style={{textDecoration:'underline',cursor:'pointer'}}>LKR Technologies Pvt Ltd</span> </p>
                     </div>
 
                 </div>

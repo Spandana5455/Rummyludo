@@ -96,7 +96,7 @@ export default function Navbar() {
             <button className="btn fs-4 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" onClick={()=>(setshow(true))}></span>
             </button>
-        {show &&  <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        {show &&  <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div className="offcanvas-header">
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -212,8 +212,8 @@ export default function Navbar() {
                 <div>
                   <ul className='navbar-nav mt-5'>
                     <li className="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/privacy') }} >  Privacy Policy </li>
-                    <li lassName="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/terms') }} > Terms and Conditions</li>
-                    <li lassName="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/legality') }} > Legality</li>
+                    <li className="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/terms') }} > Terms and Conditions</li>
+                    <li className="nav-item" style={{ cursor: 'pointer' }} data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/legality') }} > Legality</li>
                   </ul>
                 </div>
               </nav>

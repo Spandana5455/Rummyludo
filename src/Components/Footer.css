@@ -36,7 +36,7 @@
   display:inline-block
 }
 
-.site-footer .social-icons a
+.site-footer .social-icons span
 {
   width:40px;
   height:40px;
@@ -97,7 +97,7 @@
   font-weight:700;
   font-size:13px
 }
-.social-icons a{
+.social-icons span{
   background-color:#eceeef;
   color:#818a91;
   font-size:16px;
@@ -110,33 +110,34 @@
   border-radius:100%;
   -webkit-transition:all .2s linear;
   -o-transition:all .2s linear;
-  transition:all .2s linear
+  transition:all .2s linear;
+  cursor: pointer;
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+.social-icons span:active,.social-icons span:focus,.social-icons span:hover
 {
   color:#fff;
   background-color:#29aafe
 }
-.social-icons.size-sm a
+.social-icons.size-sm span
 {
   line-height:34px;
   height:34px;
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+.social-icons span.facebook:hover
 {
   background-color:#3b5998
 }
-.social-icons a.twitter:hover
+.social-icons span.twitter:hover
 {
   background-color:#00aced
 }
-.social-icons a.linkedin:hover
+.social-icons span.linkedin:hover
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons span.dribbble:hover
 {
   background-color:#ea4c89
 }

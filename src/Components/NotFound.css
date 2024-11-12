@@ -1,65 +1,76 @@
- 
-  
-  .not-found-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-  
- 
-  
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .animation-wrapper {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    animation: float 5s ease-in-out infinite;
-  }
-  
-  .ludo-dice .dice, .rummy-cards .card {
-    font-size: 4rem;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .ludo-dice .dice:hover {
-    transform: rotate(360deg);
-  }
-  
-  .rummy-cards .card:hover {
-    transform: rotateY(180deg);
-  }
-  
- 
-  
-  .btn-primary {
-    padding: 12px 24px;
-    background: #fff;
-    color: #ff7e5f;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-  
+ .not-found-container {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+ }
+
+ @keyframes gradientAnimation {
+   0% {
+     background-position: 0% 50%;
+   }
+
+   50% {
+     background-position: 100% 50%;
+   }
+
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+ .animation-wrapper {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   animation: float 5s ease-in-out infinite;
+ }
+
+ .ludo-dice .dice,
+ .rummy-cards .card {
+   font-size: 4rem;
+   transition: transform 0.3s ease;
+   cursor: pointer;
+ }
+
+ .ludo-dice .dice:hover {
+   transform: rotate(360deg);
+ }
+
+ .rummy-cards .card:hover {
+   transform: rotateY(180deg);
+ }
+
+
+
+ .btn-primary {
+   padding: 12px 24px;
+   background: #fff;
+   color: #ff7e5f;
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: bold;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .btn-primary:hover {
+   transform: scale(1.1);
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+ }
+
+ @keyframes float {
+
+   0%,
+   100% {
+     transform: translateY(0);
+   }
+
+   50% {
+     transform: translateY(-10px);
+   }
+ }

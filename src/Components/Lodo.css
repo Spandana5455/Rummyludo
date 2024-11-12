@@ -1,33 +1,33 @@
 /* src/LodoVariants.css */
 
 .lodo-container {
-    max-width:90%;
-    margin: auto;
-  }
-  
-  .lodo-header,
-  .lodo-variants-header {
-    background-color: #D2B805;
-  }
-  
-  .lodo-intro, .lodo-description {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .variant-card {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
- 
-  
-  .variant-card p {
-    color: #555;
-  }
-  
-  .text-primary {
-    color: #D2B805 !important;
-  }
-  
+  max-width: 90%;
+  margin: auto;
+}
+
+.lodo-header,
+.lodo-variants-header {
+  background-color: #D2B805;
+}
+
+.lodo-intro,
+.lodo-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.variant-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.variant-card p {
+  color: #555;
+}
+
+.text-primary {
+  color: #D2B805 !important;
+}

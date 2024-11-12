@@ -1,49 +1,36 @@
 .c-rummy-card {
-    background-color: #D2B805;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 150px;
-    cursor: pointer;
-  }
- 
-  .c-rummy-card:hover {
-    transform: translateY(-10px);
- 
-  }
-  .c-card-title {
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
- /* ______________file ________ */
- /* Style the file viewer container */
- .csr-main {
-width: 100%;
+  background-color: #D2B805;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 150px;
+  cursor: pointer;
+}
+
+.c-rummy-card:hover {
+  transform: translateY(-10px);
+
+}
+
+.c-card-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ______________file ________ */
+/* Style the file viewer container */
+.csr-main {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* .file-viewer-container{
-  width: fit-content;
-} */
-
-
-
-
-
- 
-
 
 
 @media screen and (min-width:'320px') and (max-width:'790px') {
-.file-viewer-container {
-  padding: 0px; /* Optional padding for better spacing */
-  border-radius: 10px;
-  width: 100%;
+  .file-viewer-container {
+    padding: 0px;
+    /* Optional padding for better spacing */
+    border-radius: 10px;
+    width: 100%;
+  }
 }
-}
-
-
-
-
- 

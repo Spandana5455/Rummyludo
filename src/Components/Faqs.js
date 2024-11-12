@@ -1,7 +1,7 @@
 import React from 'react';
- 
 
-export default function Faqs () {
+
+export default function Faqs() {
   const faqData = [
     { question: "What is online rummy?", answer: "Online rummy is a digital version of the traditional card game, allowing players to participate in rummy games via the internet. Players can play against others in real-time, either in cash games or for fun." },
     { question: "Is online rummy legal?", answer: "The legality of online rummy varies by jurisdiction. In India, for example, it is generally considered a game of skill and is legal in many states, but players should check local laws to ensure compliance." },
@@ -32,44 +32,44 @@ export default function Faqs () {
 
   return (
     <div className="container my-4 ">
-      <div className='content-pading'> 
-      <h1 className="text-center mb-4">Frequently Asked Questions</h1>
-      <div className="accordion" id="faqAccordion">
-        {faqData.map((faq, index) => (
-          <div className="accordion-item mt-4" key={index} style={{ borderColor: '#86600D' }}>
-            <h1 className="accordion-header" id={`heading${index}`}>
-              <button
-                className="accordion-button collapsed fs-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target={`#collapse${index}`}
-                aria-expanded="false"
-                aria-controls={`collapse${index}`}
-                style={{ backgroundColor: 'grey', color: '#fff' }}
+      <div className='content-pading'>
+        <h1 className="text-center mb-4">Frequently Asked Questions</h1>
+        <div className="accordion" id="faqAccordion">
+          {faqData.map((faq, index) => (
+            <div className="accordion-item mt-4" key={index} style={{ borderColor: '#86600D' }}>
+              <h1 className="accordion-header" id={`heading${index}`}>
+                <button
+                  className="accordion-button collapsed fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={`#collapse${index}`}
+                  aria-expanded="false"
+                  aria-controls={`collapse${index}`}
+                  style={{ backgroundColor: 'grey', color: '#fff' }}
+                >
+                  {faq.question}
+                </button>
+              </h1>
+              <div
+                id={`collapse${index}`}
+                className="accordion-collapse collapse"
+                aria-labelledby={`heading${index}`}
+                data-bs-parent="#faqAccordion"
               >
-                {faq.question}
-              </button>
-            </h1>
-            <div
-              id={`collapse${index}`}
-              className="accordion-collapse collapse"
-              aria-labelledby={`heading${index}`}
-              data-bs-parent="#faqAccordion"
-            >
-              <div className="accordion-body">
-                {faq.answer}
+                <div className="accordion-body">
+                  {faq.answer}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <h1 className='mt-5'>Conclusion</h1>
+        <p>
+          These additional FAQs cover a range of topics that can help players navigate the online rummy landscape more effectively. Being informed about the rules, strategies, and platform policies can significantly enhance the overall gaming experience.
+        </p>
       </div>
-      <h1 className='mt-5'>Conclusion</h1>
-      <p>
-      These additional FAQs cover a range of topics that can help players navigate the online rummy landscape more effectively. Being informed about the rules, strategies, and platform policies can significantly enhance the overall gaming experience.
-      </p>
-    </div>
     </div>
   );
 };
 
- 
+

@@ -1,41 +1,41 @@
 /* src/ReviewsAndTestimonials.css */
 
 .reviews-container {
-    max-width: 90%;
-    margin: auto;
-  }
-  
-  .reviews-header,
-  .resources-header,
-  .shipping-header {
-    background-color: #D2B805;
-  }
-  
-  .reviews-text, .resources-text, .shipping-text {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .resource-link {
-    color: #0056b3;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-  }
-  
-  .resource-link:hover {
-    color: #004080;
-    text-decoration: underline;
-  }
-  
-  .contact-link {
-    color: #0056b3;
-    text-decoration: none;
-  }
-  
-  .contact-link:hover {
-    color: #004080;
-    text-decoration: underline;
-  }
-  
+  max-width: 90%;
+  margin: auto;
+}
+
+.reviews-header,
+.resources-header,
+.shipping-header {
+  background-color: #D2B805;
+}
+.reviews-text,
+.resources-text,
+.shipping-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.resource-link {
+  color: #0056b3;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.resource-link:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+.contact-link {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: #004080;
+  text-decoration: underline;
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import './IndianRummy.css'
 import './PoolRummy.css'
 import { useNavigate } from 'react-router-dom'
 

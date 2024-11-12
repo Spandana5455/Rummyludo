@@ -2,15 +2,14 @@ import React from 'react'
 import './PoolRummy.css'
 import { useNavigate } from 'react-router-dom'
 export default function Pools() {
-    const navigate =useNavigate()
+    const navigate = useNavigate()
     return (
 
         <>
-
             <div className='container'>
                 <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className='mt-4 content-pading'>
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"  onClick={()=>{navigate('/')}} style={{cursor:'pointer'}}><span>Home</span></li>
+                        <li className="breadcrumb-item" onClick={() => { navigate('/') }} style={{ cursor: 'pointer' }}><span>Home</span></li>
                         <li className="breadcrumb-item active" aria-current="page"> Pool Rummy</li>
                     </ol>
                 </nav>

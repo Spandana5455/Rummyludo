@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from '../images/logo1.png'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
- 
+
 
 
 
@@ -17,10 +17,10 @@ export default function Navbar() {
   };
   const handleNavigate = (path) => {
     navigate(path);
-    
- 
+
+
   };
-  
+
   return (
     <>
       <nav className="navbar sticky-top shadow-sm " id='main-navbar-bg'>
@@ -94,9 +94,9 @@ export default function Navbar() {
             </ul>
 
             <button className="btn fs-4 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon" onClick={()=>(setshow(true))}></span>
+              <span className="navbar-toggler-icon" onClick={() => (setshow(true))}></span>
             </button>
-        {show &&  <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            {show && <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div className="offcanvas-header">
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -164,7 +164,7 @@ export default function Navbar() {
                     {activeDropdown === 'rummy' && (
                       <div className="rummy-content">
                         <ul>
-                          <li><span className="dropdown-item"data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/rules') }}>Rummy Rules</span></li>
+                          <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('/rules') }}>Rummy Rules</span></li>
                           <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/freepractice') }}>Free Practice Games</span></li>
                           <li><span className="dropdown-item" data-bs-dismiss="offcanvas" onClick={() => { handleNavigate('rummy/tips') }}>Rummy Tips & Strategies</span></li>
                         </ul>
@@ -217,9 +217,6 @@ export default function Navbar() {
                   </ul>
                 </div>
               </nav>
-
-
-
             </div>
           </div>
         </div>

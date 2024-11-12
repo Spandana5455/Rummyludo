@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function Deals() {
-     const navigate=useNavigate()
+    const navigate = useNavigate()
     return (
         <div className='container'>
             <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className='mt-4 content-pading'>
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item" onClick={()=>{navigate('/')}} style={{cursor:'pointer'}} ><span>Home</span></li>
+                    <li className="breadcrumb-item" onClick={() => { navigate('/') }} style={{ cursor: 'pointer' }} ><span>Home</span></li>
                     <li className="breadcrumb-item active" aria-current="page"> Deals Rummy</li>
                 </ol>
             </nav>

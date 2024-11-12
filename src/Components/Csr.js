@@ -20,8 +20,8 @@ export default function Csr() {
             onError={(e) => console.log('Error:', e)}
             id='file-width'
           />
-          <button 
-            className='btn btn-primary mt-3' 
+          <button
+            className='btn btn-primary mt-3'
             onClick={openFileInNewWindow}
           >
             Open in New Window

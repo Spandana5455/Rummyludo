@@ -1,130 +1,142 @@
- 
  .pool-main-container {
-    display: flex;
-    flex-wrap: wrap; /* Enables wrapping on smaller screens */
-    gap: 20px; /* Adds space between items */
-    margin: 50px 0px;
-  }
-  
-  .pool-main-container > * {
-    flex: 1 1 300px; /* Each item takes up at least 300px and adjusts dynamically */
-    box-sizing: border-box; /* Includes padding/border in the size */
-  }
-  
-.pool-main-container .pool-cards{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pool-main-container .pool-cards:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    widows: 50%;
-    height: 100%;
-    z-index: 20;
-    pointer-events: none;
-}
-.pool-main-container .pool-cards{
-    background: linear-gradient(35deg,#FFF9BF,#D2B805);
-}
-.pool-main-container .pool-cards .overlay{
-    background: linear-gradient(45deg,#D2B805,#F9F3D3);
-}
- 
-.pool-main-container .pool-cards .imgBx{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     /* Enables wrapping on smaller screens */
+     gap: 20px;
+     /* Adds space between items */
+     margin: 50px 0px;
+ }
 
-}
-.pool-main-container .pool-cards .imgBx h2{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.pool-main-container .pool-cards .overlay{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: gray;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-.pool-main-container .pool-cards .overlay:hover{
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: none;
-    opacity: 0.9;
-    border-radius: 0;
-}
-.pool-main-container .pool-cards .overlay:before{
-    content: 'Read';
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom:0;
-    color: #fff;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-delay: 0.5s;
-}
-.pool-main-container .pool-cards .overlay:hover:before{
-    display: none;
-    transition-delay: 0s;
-}
-.pool-main-container .pool-cards .content{
-    padding:20px;
-    box-sizing: border-box;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition:0s;
-    color: #fff;
+ .pool-main-container>* {
+     flex: 1 1 300px;
+     /* Each item takes up at least 300px and adjusts dynamically */
+     box-sizing: border-box;
+     /* Includes padding/border in the size */
+ }
 
-}
-.pool-main-container .pool-cards .overlay:hover ~ .content{
-    opacity: 1;
-    visibility: visible;
-    transition:0.2s;
-    transition-delay: 0.5s;
-}
-.pool-main-container .pool-cards .content h2{
-    margin: 0;
-    padding: 0;
-}
-.pool-main-container .pool-cards .content p{
-   font-size: 12px;
-}
-@media screen and (min-width:320px) and (max-width:1000px) {
-     
- 
-}
+ .pool-main-container .pool-cards {
+     position: relative;
+     width: 300px;
+     height: 400px;
+     background: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
+ .pool-main-container .pool-cards:before {
+     position: absolute;
+     content: '';
+     top: 0;
+     left: 0;
+     widows: 50%;
+     height: 100%;
+     z-index: 20;
+     pointer-events: none;
+ }
+
+ .pool-main-container .pool-cards {
+     background: linear-gradient(35deg, #FFF9BF, #D2B805);
+ }
+
+ .pool-main-container .pool-cards .overlay {
+     background: linear-gradient(45deg, #D2B805, #F9F3D3);
+ }
+
+ .pool-main-container .pool-cards .imgBx {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+ }
+
+ .pool-main-container .pool-cards .imgBx h2 {
+     margin: 10px 0 0;
+     padding: 0;
+     color: #fff;
+     font-weight: 700;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+ }
+
+ .pool-main-container .pool-cards .overlay {
+     position: absolute;
+     bottom: 20px;
+     right: 20px;
+     width: 50px;
+     height: 50px;
+     background: gray;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+     cursor: pointer;
+     border-radius: 50%;
+     transition: 0.5s;
+ }
+
+ .pool-main-container .pool-cards .overlay:hover {
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     box-shadow: none;
+     opacity: 0.9;
+     border-radius: 0;
+ }
+
+ .pool-main-container .pool-cards .overlay:before {
+     content: 'Read';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     color: #fff;
+     font-size: 12px;
+     text-transform: uppercase;
+     font-weight: 500;
+     letter-spacing: 1px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition-delay: 0.5s;
+ }
+
+ .pool-main-container .pool-cards .overlay:hover:before {
+     display: none;
+     transition-delay: 0s;
+ }
+
+ .pool-main-container .pool-cards .content {
+     padding: 20px;
+     box-sizing: border-box;
+     z-index: 1;
+     pointer-events: none;
+     opacity: 0;
+     visibility: hidden;
+     transition: 0s;
+     color: #fff;
+
+ }
+
+ .pool-main-container .pool-cards .overlay:hover~.content {
+     opacity: 1;
+     visibility: visible;
+     transition: 0.2s;
+     transition-delay: 0.5s;
+ }
+
+ .pool-main-container .pool-cards .content h2 {
+     margin: 0;
+     padding: 0;
+ }
+
+ .pool-main-container .pool-cards .content p {
+     font-size: 12px;
+ }
+
+ @media screen and (min-width:320px) and (max-width:1000px) {}

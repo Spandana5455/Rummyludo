@@ -35,7 +35,7 @@ const Deals = lazy(() => import('./Components/Deals'))
 const Pools = lazy(() => import('./Components/Pools'))
 const Points = lazy(() => import('./Components/Points'))
 const Tips = lazy(() => import('./Components/Tips'))
-const Csr = lazy(() => import('./Components/Csr'))
+ 
 
 
 
@@ -67,7 +67,6 @@ export default function App() {
             <Route path='gstpolicy' element={<GstPolicy />} />
             <Route path='tdsfilling' element={<TdsFilling />} />
             <Route path='TdsPolicy' element={<TdsPolicy />} />
-            <Route path='csr' element={<Csr />} />
             <Route path='faqs' element={<Faqs />} />
             <Route path='contactus' element={<Contact />} />
             <Route path='shippingpolicy' element={<Shipingpolicy />} />

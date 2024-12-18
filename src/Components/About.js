@@ -12,12 +12,12 @@ export default function About() {
         <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb" className='mt-4 content-pading'>
           <ol className="breadcrumb">
             <li className="breadcrumb-item" onClick={() => { navigate('/') }} style={{ cursor: 'pointer' }}><span>Home</span></li>
-            <li className="breadcrumb-item active" aria-current="page">About</li>
+            <li className="breadcrumb-item active" aria-current="page">About Us</li>
           </ol>
         </nav>
         <div className='content-pading'>
           <div>
-            <h1 className='mt-4'>About</h1>
+            <h1 className='mt-4'>About Us</h1>
             <p className="para">RummyLudo is one of India’s premier online rummy platforms, delivering the classic 13-card rummy experience directly to your preferred device with all the excitement of traditional play. Rummy, which was previously limited to local gatherings with friends and family, now has a digital avatar on RummyLudo, delivering fast-paced games, a secure platform, and safe transactions that adhere to international standards.</p>
             <p className="para">RummyLudo replicates the offline experience, utilizing innovative technology and data analysis to create a unique gaming journey for each player. Every time you play online, you may simply access your favorite 13-card game with smooth action that combines skill and fun.</p>
 
@@ -31,7 +31,7 @@ export default function About() {
                   <div className="card border-0 shadow-lg rounded">
                     <div className="card-body p-4">
                       <h5 className="card-title text-dark fw-bold">Safety Measures:</h5>
-                      <p className="card-text">Reputable rummy platforms implement robust security protocols, including SSL encryption, to protect players' personal and financial information. Additionally, mandatory KYC (Know Your Customer) verification helps prevent fraudulent activities and ensures a secure gaming experience. Regular audits and RNG (Random Number Generator) certification further enhance trust, guaranteeing fair play and random outcomes.</p>
+                      <p className="card-text">Rummy platforms use robust security protocols like SSL encryption, KYC verification, regular audits, and RNG certification to protect players' personal and financial information, prevent fraudulent activities, and ensure fair play.</p>
                     </div>
                   </div>
                 </div>

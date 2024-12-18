@@ -8,7 +8,7 @@ export default function Footer() {
 
 
     const openFileInNewWindow = () => {
-        window.open('/CSR.pdf', '_blank'); // Opens the PDF in a new tab
+        window.open('/CSR.pdf', '_blank'); 
     };
     return (
 

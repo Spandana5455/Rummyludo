@@ -6,7 +6,7 @@ export default function TdsPolicy() {
     <>
       <div className='container' style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
         <div className='content-pading shadow-lg rounded'>
-          <h1 className='text-center '>TDS Policy (Updated Soon)</h1>
+          <h1 className='text-center '>TDS Policy</h1>
           <hr />
           <p className="para">
             The Tax Deducted at Source (TDS) policy is a critical aspect of playing online rummy, impacting players’ winnings. In India, TDS is applicable when a player's net winnings exceed ₹10,000 in a financial year, at a standard rate of 30%.

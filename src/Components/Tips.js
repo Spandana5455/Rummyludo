@@ -92,7 +92,13 @@ export default function Tips() {
           <h3>Use the Wild Card Joker and Printed Joker Wisely </h3>
           <p className="para">The joker is the biggest game-changer in the rummy game. Getting a joker at a crucial moment in the game will determine whether you lose or win. Be careful not to throw away any jokers, whether they are printed or wild card jokers. Above all, make good use of them. Be sure to arrange them in groupings of high-value cards or in succession.</p>
           <p className="para">For example, </p>
-          <p className="para">Suppose you have 2❤️ and 3❤️, and you also have 8❤️ and 9❤️. The joker should be grouped with 9❤️ and 8❤️. due to the fact that certain cards are worth more points. </p>
+          <p className="para">Suppose you have 
+          <span role='img' aria-label='two of hearts'>2❤️</span> and 
+          <span role='img' aria-label='three of hearts'>3❤️</span>, and you also have 
+          <span role='img' aria-label='eight of hearts'>8❤️</span> and 
+          <span role='img' aria-label='nine of hearts'>9❤️</span>. The joker should be grouped with 
+          <span role='img' aria-label='nine of hearts'>9❤️</span> and 
+          <span role='img' aria-label='eight of hearts'>8❤️</span>. due to the fact that certain cards are worth more points. </p>
           <h3>What Are Sequences?</h3>
           <p className="para">A sequence is also called a run. A sequence is created when three or more successive cards of the same suit are grouped together. Sequences come in two varieties.</p>
           <h3>Pure Sequence</h3>
@@ -118,7 +124,8 @@ export default function Tips() {
             <li className="li-points"> 9 ♥</li>
           </ol>
 
-          <p className="para">If you obtain an 8❤️, utilize it in place of the joker you inserted between them. </p>
+          <p className="para">If you obtain an 
+          <span role='img' aria-label='eight of hearts'>8❤️</span>, utilize it in place of the joker you inserted between them. </p>
           <p className="para">Please be aware that if you do not have a pure sequence from the beginning, it might be wise to drop out.</p>
 
 

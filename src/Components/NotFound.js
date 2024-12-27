@@ -12,7 +12,8 @@ export default function NotFound() {
 
         <div className="animation-wrapper">
           <div className="ludo-dice">
-            <div className="dice">🎲</div>
+            <div className="dice">
+              <span role='img' aria-label='dice'>🎲</span></div>
           </div>
           <div className="rummy-cards">
             <div className="card">🂡</div>
